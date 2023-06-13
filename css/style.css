@@ -90,7 +90,7 @@ html{
 #home{
   height: 100vh;
   min-height: 500px;
-  background: url(../images/Background.png) no-repeat center;
+  background: url(../images/background.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -188,6 +188,18 @@ section{
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin-right: 100px;
 }
+.about-pic2{
+  width: 16em;
+  display: flex;
+  position: relative;
+  width: 240px;
+  height: 265px;
+  background-color: #424242;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-left: 80%;
+  margin-top: 10%;
+}
 .about-text{
   flex: 1;
   transform: translateX(100%);
@@ -196,7 +208,16 @@ section{
 .about-text.slide-in {
   transform: translateX(0);
 }
+.about-text2{
+  margin-top: -20%;
+  margin-left: 28.5%;
+}
 .about-text h3{
+  margin: 10px 0;
+  color: #444;
+  font-size: 16px;
+}
+.about-text2 h3{
   margin: 10px 0;
   color: #444;
   font-size: 16px;
@@ -211,7 +232,19 @@ section{
   border-radius: 50%;
   margin: 0 14px;
 }
-.about-text p{
+
+
+.about-text2 h3 span:nth-child(1):after,
+.about-text2 h3 span:nth-child(2):after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #444;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 14px;
+}
+.about-text2S p{
   font-size: 17px;
   text-align: justify;
   line-height: 26px;
@@ -424,8 +457,8 @@ footer{
 
 .socials a{
   text-decoration: none;
-  font-size: 1em;
-  color: #324798;
+  font-size: 1.2em;
+  color: #f1f1f1;
   font-weight: 500;
   margin: 1em;
 }
@@ -492,6 +525,22 @@ footer{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 80%;
+      
+  }
+  .about-pic2{
+    margin: 0 auto 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  .about-text2{
+    flex: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    font-size: 80%;
       
   }
   .block{
